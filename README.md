@@ -88,9 +88,9 @@ k6 run test.js
       - **スレッドグループの追加**: `Test Plan` を右クリック → `Add > Threads (Users) > Thread Group`
           - `Number of Threads (users)`: 10
       - **HTTPリクエストの追加**: `Thread Group` を右クリック → `Add > Sampler > HTTP Request`
-          - **Server Name or IP**: `localhost`
-          - **Port Number**: `8080`
-          - **Path**: `/items`
+          - **Server Name or IP**: `localhost`（ローカルの場合）
+          - **Port Number**: `8080`（ローカルの場合）
+          - **Path**: `/items`（例）
       - **リスナー(結果表示)の追加**: `Thread Group` を右クリック → `Add > Listener > Summary Report`
 
 3.  **テスト実行**:
